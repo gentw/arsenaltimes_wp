@@ -1,0 +1,3335 @@
+@font-face {
+    font-family: perkryesore;
+    src: url(../fontet/PassionOne-Regular.ttf)
+}
+
+@font-face {
+    font-family: pertitullin;
+    src: url(../fontet/SaolText-Semibold.woff2)
+}
+
+@font-face {
+    font-family: nentitull;
+    src: url(../fontet/GraphikCompact-Regular-Web.woff2)
+}
+
+@font-face {
+    font-family: titujt;
+    src: url(../fontet/SaolText-Medium.woff2)
+}
+
+@font-face {
+    font-family: kategori;
+    src: url(../fontet/GraphikCondensed-Semibold-Web.woff2)
+}
+
+@font-face {
+    font-family: permenu;
+    src: url(../fontet/GraphikCondensed-Medium-Web.woff2)
+}
+
+@-webkit-keyframes pulse {
+    0% {
+        -webkit-box-shadow: 0 0 0 0 rgba(255,255,255,.4)
+    }
+
+    70% {
+        -webkit-box-shadow: 0 0 0 15px transparent
+    }
+
+    100% {
+        -webkit-box-shadow: 0 0 0 0 transparent
+    }
+}
+
+@keyframes pulse {
+    0% {
+        -moz-box-shadow: 0 0 0 0 rgba(255,255,255,.4);
+        box-shadow: 0 0 0 0 rgb(216 90 90/40%)
+    }
+
+    70% {
+        -moz-box-shadow: 0 0 0 15px transparent;
+        box-shadow: 0 0 0 15px transparent
+    }
+
+    100% {
+        -moz-box-shadow: 0 0 0 0 transparent;
+        box-shadow: 0 0 0 0 transparent
+    }
+}
+
+body {
+    margin: 0;
+    padding: 0
+}
+
+* {
+    border: none
+}
+
+ul,li {
+    list-style: none
+}
+
+.kontenti {
+    box-sizing: border-box
+}
+
+a {
+    text-decoration: none;
+    color: #000
+}
+
+a:hover {
+    text-decoration: none;
+    color: #ee3024
+}
+
+ul {
+    padding: 0;
+    margin: 0
+}
+
+.menu li:hover .sub-menu {
+    display: block
+}
+
+.sub-menu {
+    float: left;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    z-index: 9;
+    background: #e1e1e1;
+    box-shadow: 1px 2px 7px #e1e1e1;
+    display: none
+}
+
+.sub-menu li {
+    margin: 0 10px
+}
+
+.sub-menu li:hover a,.sub-menu li.current-post-ancestor a,.sub-menu li.current-menu-parent a,.sub-menu li.current-menu-item a {
+    color: #d50000
+}
+
+ul li {
+    text-decoration: none;
+    list-style: none;
+    text-align: center;
+    display: inline-block;
+    margin: 0 3px;
+    padding: 19px 10px;
+    font-size: 18px;
+    text-transform: uppercase
+}
+
+ul li a {
+    font-weight: 500;
+    color: #f5f5f5
+}
+
+ul li a:hover {
+    color: #cbcbcb
+}
+
+.baneri-header {
+    margin: 20px auto;
+    text-align: center
+}
+
+.baneri-header img {
+    height: auto
+}
+
+.logo-header {
+    margin: 20px 0
+}
+
+.logo a {
+    font-size: 50px;
+    color: #000
+}
+
+.kerkoni-menumeshume {
+    display: flex
+}
+
+.logo-menu {
+    border-top: 5px solid #e1c400;
+    padding: 5px 0;
+    background: #ee3024
+}
+
+.logo-menu s {
+    text-decoration: none;
+    font-size: 40px;
+    font-weight: 500;
+    font-family: permenu
+}
+
+.logo-menu img {
+    width: 160px;
+    display: none
+}
+
+.menu .logo img {
+    width: 110px;
+    padding: 10px 0 0 0;
+}
+
+.shtyje-search titulli {
+    border-bottom: 3px solid #404040;
+    color: #fff
+}
+
+.shtyje-search form {
+    -webkit-box-shadow: 10px 10px 39px -21px rgba(0,0,0,.75);
+    -moz-box-shadow: 10px 10px 39px -21px rgba(0,0,0,.75);
+    box-shadow: 10px 10px 39px -21px rgba(0,0,0,.75)
+}
+
+.fixkerko {
+    background: #ee3024
+}
+
+.fixkerko .kontenti {
+    margin-top: 0
+}
+
+.sticky .menu {
+    border: 0
+}
+
+.kerkimi {
+    padding: 0;
+    cursor: pointer;
+    margin: 16px 0;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #ebebeb;
+    border-radius: 4px
+}
+
+.largojee {
+    float: right;
+    font-size: 33px;
+    background: #404040;
+    width: 35px;
+    right: 20px;
+    top: 10px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    color: #c9c9c9;
+    position: relative
+}
+
+.largojee a {
+    color: #fff
+}
+
+.shtyje-search {
+    width: 1200px;
+    margin: 50px auto;
+    overflow-y: auto;
+    height: 100vh;
+    max-width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box
+}
+
+.lajmet-search {
+    display: flex;
+    border-bottom: 1px solid #404040;
+    padding-bottom: 10px;
+    margin-bottom: 10px
+}
+
+.lajmet-search .foto {
+    width: 180px;
+    height: 100px;
+    padding-right: 20px
+}
+
+.lajmet-search .foto img {
+    width: 180px;
+    height: 100%;
+    object-fit: cover
+}
+
+.lajmet-search .titulli {
+    font-size: 22px;
+    line-height: 30px;
+    color: #fff;
+    font-weight: 200
+}
+
+.lajmet-search .titulli a {
+    color: #e7e7e7
+}
+
+.lajmet-search .titulli a:hover {
+    color: #ee3024
+}
+
+ikonalive {
+    background: #db0000;
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    border-radius: 100%;
+    margin-right: 6px;
+    line-height: 0;
+    animation: pulse 2s infinite
+}
+
+livelajmi {
+    color: #db0000
+}
+
+mbititull {
+    color: #ee3024
+}
+
+.art {
+    position: relative
+}
+
+.anash-info {
+    position: absolute;
+    left: 0
+}
+
+.art .lajme-titulli {
+    color: #ee3024;
+    font-size: 17px;
+    font-weight: 400;
+    margin-bottom: 0;
+    font-family: kategori
+}
+
+.art h3 {
+    font-size: 60px;
+    line-height: 60px;
+    padding: 0;
+    margin: 10px 0;
+    margin-bottom: 0;
+    color: #000;
+    font-weight: 400;
+    font-family: perkryesore
+}
+
+.teksti {
+    margin-bottom: 50px
+}
+
+.lajmi-lexo2 .teksti figure {
+    width: 100%!important;
+    height: auto
+}
+
+.menu {
+    background: #ee3024;
+    display: flex;
+    height: 85px;
+    justify-content: space-between;
+    font-family: permenu;
+    align-items: center;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed!important;
+    z-index: 99999;
+    top: 0;
+    right: 0;
+    background-repeat: no-repeat;
+    background-color: #ee3024;
+    background-size: 50%;
+    background-position: bottom;
+    overflow-x: hidden;
+    -webkit-box-shadow: -9px 0 61px -17px rgba(0,0,0,.75);
+    -moz-box-shadow: -9px 0 61px -17px rgba(0,0,0,.75);
+    box-shadow: -9px 0 61px -17px rgba(0,0,0,.75)
+}
+
+.sidenav a {
+    padding: 15px 20px;
+    text-decoration: none;
+    font-size: 22px;
+    color: #f3f3f3;
+    display: block;
+    text-transform: uppercase;
+    transition: .3s;
+    font-family: nentitull;
+    font-weight: 400;
+    text-align: center
+}
+
+.sidenav a:hover {
+    color: #ee3024
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 45px;
+    margin-left: 0;
+    line-height: 36px;
+    text-align: center;
+    font-weight: 400;
+    font-family: kategori;
+    color: #fff
+}
+
+#main {
+    padding: 15px;
+    padding-right: 0;
+    display: none
+}
+
+titulli {
+    font-size: 27px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    line-height: 1;
+    display: block;
+    padding: 15px 0;
+    border-bottom: 1px solid;
+    font-family: kategori;
+    text-transform: uppercase
+}
+
+.kryesoret-new {
+    display: flex;
+    gap: 20px;
+    grid-gap: 20px
+}
+
+.kryesoret-new .shkruan-single {
+    border-top: 0;
+    padding: 10px 0
+}
+
+.kryesoret-new .shkruan-single .emri {
+    font-family: kategori;
+    font-weight: 500;
+    font-size: 17px
+}
+
+.lajmi-pare {
+    display: flex;
+    gap: 20px;
+    grid-gap: 20px;
+    margin-bottom: 15px
+}
+
+.vazhdoo {
+    width: 73%
+}
+
+.kryesoret-new .lajmi-foto {
+    order: 2
+}
+
+.kryesoret-new .foto {
+    width: 500px
+}
+
+.kryesoret-new .foto img {
+    width: 100%;
+    height: auto;
+    max-height: 280px;
+    object-fit: cover
+}
+
+.kryesoret-new .lajmi-kontent {
+    order: 1;
+    width: 100%
+}
+
+.kryesoret-new .lajmi-kontent .cat-ora {
+    margin-top: 0;
+    display: none
+}
+
+.kryesoret-new .titulli {
+    font-size: 32px;
+    line-height: 33px;
+    margin-bottom: 20px;
+    font-family: perkryesore
+}
+
+.kryesoret-new .lajmiinfo {
+    color: #767676;
+    line-height: 22px;
+    font-family: nentitull
+}
+
+.lajmiinfo {
+    display: none
+}
+
+.kryesoret-new .reklama {
+    width: 26%
+}
+
+.kryesoret-new .reklama img {
+    width: 100%
+}
+
+.lajmet-dy {
+    display: grid;
+    padding: 15px 0;
+    gap: 13px;
+    grid-gap: 13px;
+    grid-template-columns: repeat(3,1fr)
+}
+
+.lajmet-dy .cat-ora {
+    margin: 0;
+    display: none!important
+}
+
+.lajmet-dy .foto {
+    width: 100%
+}
+
+.lajmet-dy .foto img {
+    width: 100%;
+    max-width: 100%;
+    max-height: 150px;
+    object-fit: cover
+}
+
+.lajmet-dy .titulli {
+    font-size: 22px;
+    line-height: 20px;
+    padding: 6px 0;
+    font-weight: 400;
+    font-family: perkryesore
+}
+
+.lajmet3 {
+    border-left: 1px solid #cfcfcf;
+    border-right: 1px solid #cfcfcf;
+    padding: 0 10px
+}
+
+.lajmet3 .titulli {
+    border-bottom: 1px solid #cfcfcf;
+    margin-bottom: 0;
+    padding: 10px 0;
+    font-size: 20px
+}
+
+.lajmet3 .titulli:last-child {
+    border: 0
+}
+
+.lajmet3 .titulli:first-child {
+    padding-top: 0
+}
+
+.kryesoret {
+    margin-bottom: 30px
+}
+
+.nballine {
+    width: 290px;
+    background: #fff;
+    border-left: 5px solid #eff8fa;
+    padding-left: 22px
+}
+
+.nballine .titulli-spotilight {
+    padding-top: 0
+}
+
+.kontenti {
+    width: 1200px;
+    margin: 20px auto;
+    max-width: 100%;
+    padding: 0 20px
+}
+
+.f2 .logo img {
+}
+
+.titulli {
+    color: #000;
+    font-size: 18px;
+    font-family: kategori
+}
+
+.kryesoret .lajmi3 {
+    height: 400px;
+    background: #f3f3f3
+}
+
+.kryesoret .lajmi3 ora {
+    padding: 0
+}
+
+.kryesoret .lajmi3 .cat-ora {
+    padding-top: 20px;
+    margin: 0
+}
+
+.kryesoret .lajmi3 .foto {
+    width: 50%;
+    float: left;
+    padding-right: 20px
+}
+
+.kryesoret .lajmi3 img {
+    width: 100%;
+    max-width: 100%;
+    height: 400px;
+    object-fit: cover
+}
+
+.kryesoret .lajmi3 .titulli {
+    font-size: 45px;
+    line-height: 50px;
+    padding-top: 20px;
+    padding: 20px;
+    font-weight: 400
+}
+
+.kryesoret .lajmi3 .lajmiinfo {
+    margin: 20px 0;
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 0;
+    color: #5c5c5c;
+    font-family: nentitull;
+    font-weight: 300
+}
+
+.anash-ballina {
+    width: 380px;
+    padding-left: 15px
+}
+
+.anash-lajmi .titulli {
+    font-weight: 700;
+    margin: 15px 0;
+    font-size: 22px;
+    line-height: 26px
+}
+
+.anash-ballina .foto img {
+    width: 100%;
+    max-width: 100%;
+    height: 200px;
+    object-fit: cover
+}
+
+.anash-lajmi .lajmiinfo {
+    font-size: 16px;
+    line-height: 24px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #e3e3e3
+}
+
+.vazhdonlajmi3 {
+    display: flex;
+    gap: 15px;
+    grid-gap: 15px;
+    row-gap: 15px
+}
+
+.vazhdonlajmi3 .foto img {
+    width: 100%;
+    max-width: 100%;
+    height: 200px;
+    object-fit: cover
+}
+
+.vazhdonlajmi3 .dyposte .titulli {
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: 700
+}
+
+.vazhdonlajmi3 .dyposte {
+    border-right: 2px solid #e3e3e3;
+    padding-right: 15px;
+    width: 50%
+}
+
+.vazhdonlajmi3 .dyposte:nth-child(2) {
+    border: 0;
+    padding: 0
+}
+
+.anash-lajmi .shtyje {
+    padding: 0 20px
+}
+
+.vazhdonlajmi3 .dyposte .lajmiinfo {
+    border: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    font-size: 16px;
+    line-height: 24px
+}
+
+.anash-lajmivazhdon {
+    border-bottom: 2px solid #e3e3e3
+}
+
+.anash-lajmivazhdon:last-child {
+    border: 0
+}
+
+.anash-lajmivazhdon .titulli {
+    font-size: 18px;
+    line-height: 24px
+}
+
+.titulli-spotilight {
+    margin: 10px 0;
+    border-bottom: 1px solid;
+    padding: 10px 0;
+    font-size: 27px;
+    font-family: kategori;
+    line-height: 1;
+    text-transform: uppercase
+}
+
+.spotlight .cat-ora {
+    border-bottom: 2px solid #e3e3e3;
+    height: 80px
+}
+
+.spotlight .cat-ora:last-child {
+    border: 0
+}
+
+.spotlight ora {
+    background: #ffe462;
+    padding: 6px;
+    border-radius: 3px;
+    float: left;
+    margin-right: 15px;
+    width: 40px;
+    text-align: center
+}
+
+.spotlight .titulli {
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 22px;
+    border-bottom: 1px solid #d1d1d1;
+    padding-bottom: 10px;
+    width: 100%
+}
+
+.spotlight .titulli a {
+    color: #222
+}
+
+.spotlight .titulli a:hover {
+    color: #ee3024
+}
+
+.spotlight .titulli .ora {
+    font-size: 13px;
+    color: #7a7a7a;
+    line-height: 1;
+    margin-top: 6px;
+    font-family: nentitull
+}
+
+.spotlight .titulli:last-child {
+    border: 0
+}
+
+.cat-ora {
+    margin: 5px 0;
+    font-family: nentitull
+}
+
+.ngjyra-new .zmadhoje {
+    grid-template-columns: repeat(3,1fr)
+}
+
+.ngjyra-new .zmadhoje .lajmet {
+    margin-bottom: 20px
+}
+
+.ngjyra-new .zmadhoje .lajmet .titulli {
+    font-size: 20px;
+    line-height: 25px
+}
+
+.ngjyra-new .zmadhoje .foto img {
+    height: 220px
+}
+
+.lajme {
+    display: grid;
+    flex-wrap: wrap;
+    gap: 15px;
+    grid-gap: 15px;
+    grid-template-columns: repeat(4,1fr)
+}
+
+.lajmet {
+    flex: 1 0 21%
+}
+
+.ek .lajme {
+    display: grid;
+    flex-wrap: wrap;
+    gap: 15px;
+    grid-gap: 15px;
+    grid-template-columns: repeat(3,1fr)
+}
+
+.ek .lajmet:nth-child(3) {
+    background: #000;
+    width: 500px;
+    display: flex;
+    gap: 20px;
+    grid-gap: 20px;
+    padding: 60px 36px
+}
+
+.ek .lajmet:nth-child(3) .foto {
+    order: 2;
+    width: 100%
+}
+
+.ek .lajmet:nth-child(3) .titulli a {
+    color: #fff
+}
+
+.ek .lajmet:nth-child(3) .titulli a:hover {
+    color: #ee3024
+}
+
+.ek .lajmet:nth-child(3) .cat-ora {
+    display: none
+}
+
+.ek .lajmet:nth-child(3) .lajmiinfo {
+    display: block;
+    color: #fff;
+    color: #767676;
+    line-height: 22px;
+    font-family: nentitull
+}
+
+.ek .lajmet .lajmiinfo {
+    display: none
+}
+
+.lajmi-info.sticky {
+    top: 10%!important;
+    background: #f3f3f3;
+    z-index: 0!important
+}
+
+@media only screen and (max-width: 1217px) and (min-width:1024px) {
+    .lajmi-info {
+        padding:13px!important;
+        left: 0!important
+    }
+}
+
+.lajmet.sh {
+    margin-bottom: 20px
+}
+
+.lajmet:nth-child(4n+4) {
+    padding-right: 0;
+    border-right: 0
+}
+
+.lajmet:nth-child(4n+1) {
+    padding-left: 0
+}
+
+.lajme .lajmet img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover
+}
+
+.lajme .lajmet .titulli {
+    font-size: 19px;
+    line-height: 22px;
+    font-weight: 400
+}
+
+.lajme .lajmet .lajmiinfo {
+    margin: 20px 0;
+    margin-bottom: 0;
+    font-size: 16px;
+    color: #767676;
+    line-height: 22px;
+    font-family: nentitull
+}
+
+.hulumtime {
+    display: flex
+}
+
+.hulumtime .lajmi1 {
+    width: 800px;
+    border-right: 2px solid #e3e3e3;
+    padding-right: 15px
+}
+
+.hulumtime .lajmi1 .foto img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover
+}
+
+.hulumtime .lajmi1 .titulli {
+    font-size: 40px;
+    line-height: 45px;
+    font-weight: 600
+}
+
+.hulumtime .lajmi1 .lajmiinfo {
+    margin: 20px 0;
+    margin-bottom: 0;
+    font-size: 18px;
+    line-height: 24px;
+    padding: 15px 0
+}
+
+.hulumtime .lajmi2 .titulli {
+    font-weight: 700;
+    margin: 10px 0;
+    font-size: 22px;
+    line-height: 26px;
+    padding-bottom: 20px
+}
+
+.lajmi2 {
+    width: 370px;
+    padding-left: 15px
+}
+
+.lajmi2 .foto img {
+    width: 100%;
+    height: auto
+}
+
+.hulumtime .lajmi2-vazhdon {
+    border-bottom: 2px solid #e3e3e3;
+    padding: 10px 0;
+    border-top: 2px solid #e3e3e3
+}
+
+.hulumtime .lajmi2-vazhdon:last-child {
+    border: 0
+}
+
+.hulumtime .lajmi2-vazhdon .titulli {
+    font-size: 18px!important;
+    line-height: 24px!important
+}
+
+.sporti {
+    display: flex;
+    gap: 25px;
+    grid-gap: 25px;
+    row-gap: 25px;
+    width: 100%;
+    flex-direction: row
+}
+
+.sporti img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover
+}
+
+.sport3 {
+    order: 3
+}
+
+.sport1 {
+    width: 350px
+}
+
+.sport1 .foto {
+    float: left;
+    width: 140px;
+    height: 130px;
+    margin-right: 15px
+}
+
+.sport1 .cat-ora {
+    margin-top: 0!important
+}
+
+.sport1 .titulli {
+    font-weight: 700;
+    line-height: 20px
+}
+
+.sport2 {
+    width: 540px
+}
+
+.sport2 {
+    order: 2
+}
+
+.sport2 .foto img {
+    height: 300px
+}
+
+.sport2 .titulli {
+    font-size: 29px;
+    line-height: 36px;
+    font-weight: 600
+}
+
+.sport3 .cat-ora {
+    margin-top: 0!important
+}
+
+.sport3 .titulli {
+    font-weight: 700;
+    line-height: 22px
+}
+
+.sport3 {
+    width: 350px
+}
+
+.sport3 .foto {
+    float: left;
+    width: 140px;
+    height: 130px;
+    margin-right: 15px
+}
+
+.fix {
+    clear: both;
+    margin-bottom: 40px;
+    height: 120px
+}
+
+.background-infografika {
+    background: #121212;
+    width: 100%;
+    padding: 6px 0
+}
+
+.background-infografika titulli {
+    color: #fee362;
+    font-size: 26px;
+    border: 0
+}
+
+.vip {
+    display: flex;
+    gap: 25px;
+    grid-gap: 25px;
+    row-gap: 25px;
+    width: 100%;
+    flex-direction: row
+}
+
+.vip img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover
+}
+
+.vip1 {
+    width: 500px
+}
+
+.vip1 .titulli {
+    font-size: 29px;
+    line-height: 36px;
+    font-weight: 600
+}
+
+.vip2 {
+    width: 350px
+}
+
+.vip2 .foto {
+    float: left;
+    width: 140px;
+    height: 130px;
+    margin-right: 15px
+}
+
+.vip2 .titulli {
+    font-weight: 700;
+    line-height: 20px
+}
+
+.vip2 .cat-ora {
+    margin-top: 0!important
+}
+
+.reklama-anash img {
+    height: auto
+}
+
+.background-frontv {
+    background: #121212;
+    width: 100%;
+    padding: 6px 0
+}
+
+.background-frontv titulli {
+    color: #fee362;
+    font-size: 26px;
+    border: 0
+}
+
+.fronttv {
+    display: flex;
+    width: 100%
+}
+
+.fronttv img {
+    width: 100%;
+    height: auto
+}
+
+.fronttv1 {
+    width: 800px;
+    border-right: 2px solid #e3e3e3;
+    padding-right: 15px
+}
+
+.fronttv1 .titulli {
+    font-size: 40px;
+    line-height: 45px;
+    font-weight: 600
+}
+
+.fronttv1 .titulli a {
+    color: #f6f6f6
+}
+
+.fronttv1 .titulli a:hover {
+    color: #ee3024
+}
+
+.fronttv2 .titulli a:hover {
+    color: #ee3024
+}
+
+.fronttv1 .lajmiinfo {
+    margin: 20px 0;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 15px 0;
+    color: #9f9f9f
+}
+
+.fronttv1 .butoni_meshume {
+    background: #ffe462;
+    color: #000;
+    width: 120px;
+    padding: 16px;
+    font-weight: 700;
+    text-align: center;
+    font-size: 18px
+}
+
+.fronttv2 .lajmiinfo {
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 10px 0;
+    color: #9f9f9f
+}
+
+.fronttv cat {
+    background: 0 0;
+    padding: 0;
+    color: #fee362;
+    font-size: 16px
+}
+
+.fronttv2 {
+    width: 370px;
+    padding-left: 15px
+}
+
+.fronttv2 .titulli {
+    font-weight: 700;
+    margin: 10px 0;
+    font-size: 22px;
+    line-height: 26px
+}
+
+.fronttv2 .titulli a {
+    color: #f6f6f6
+}
+
+.fronttv1 img {
+    height: 400px;
+    object-fit: cover
+}
+
+.fronttv2 img {
+    height: 200px;
+    object-fit: cover
+}
+
+.footer {
+    display: flex;
+    padding: 50px 0;
+    justify-content: space-between;
+    gap: 20px;
+    grid-gap: 20px
+}
+
+.footer .f1 {
+    width: 30%;
+    display: block;
+    font-family: pertitullin;
+    padding-left: 6px
+}
+
+.footer .f1 h2 {
+    margin: 0;
+    color: #fff;
+    font-family: kategori;
+    text-transform: uppercase;
+    font-weight: 400
+}
+
+.footer .f1 p {
+    line-height: 21px;
+    font-size: 16px;
+    font-family: nentitull;
+    color: #fff;
+    font-weight: 400
+}
+
+.footer .f2 {
+    width: 100%;
+    font-family: pertitullin;
+    margin: 0 auto;
+    border-right: 1px solid #bfbfbf;
+    padding-right: 50px
+}
+
+.footer .f2 .logo {
+    font-size: 40px;
+    padding: 15px 0;
+    font-family: permenu
+}
+
+.background-footeri {
+    display: block;
+    background: #ee3024
+}
+
+.background-footeri .kontenti {
+    margin: 0 auto
+}
+
+.footeri .kontenti {
+    margin: 0 auto
+}
+
+.footer .f2 p {
+    line-height: 27px;
+    font-family: nentitull;
+    color: #fff;
+    font-weight: 400
+}
+
+.minifooter {
+    background: #fff;
+    color: #363636
+}
+
+.minifooter p {
+    font-family: nentitull;
+    color: #080808
+}
+
+.minifooter .kontenti {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.minifooter .kontenti .sociale {
+    padding: 7px 0;
+    font-family: nentitull
+}
+
+.minifooter .kontenti .sociale a {
+    color: #080808;
+    text-transform: uppercase;
+    padding: 0 6px;
+    font-size: 15px
+}
+
+.minifooter .kontenti .sociale a:last-child {
+    padding-right: 0
+}
+
+.minifooter .kontenti .sociale a:hover {
+    color: #ee3024
+}
+
+.page-titulli {
+    font-size: 60px;
+    margin: 50px 0;
+    font-weight: 600
+}
+
+.stafi-info {
+    display: flex
+}
+
+.stafi-info titulli {
+    border: 0;
+    font-size: 22px
+}
+
+.infostafi p {
+    font-size: 22px;
+    line-height: 33px;
+    margin-bottom: 26px
+}
+
+.infostafi .f1 p {
+    font-size: 20px;
+    line-height: 15px;
+    margin-bottom: 0
+}
+
+.ikona-logo {
+    padding-top: 25px
+}
+
+.stafi {
+    width: 40%
+}
+
+.stafi p {
+    background: #f7f7f7;
+    padding: 20px;
+    margin-right: 100px;
+    font-size: 22px;
+    margin-bottom: 15px;
+    margin-top: 5px
+}
+
+.stafi p::before {
+    content: '';
+    background: url(../logo/anash.png);
+    width: 30px;
+    height: 30px;
+    position: relative;
+    float: left;
+    left: -10px;
+    top: -2px
+}
+
+.infostafi {
+    width: 60%
+}
+
+.lajmi-lexo {
+    display: flex
+}
+
+.lajmi-lexo2 {
+    width: 740px;
+    margin-right: 30px
+}
+
+.lajmi-lexo2 .lajme-titulli {
+    color: #ee3024;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 20px 0
+}
+
+.lajmi-lexo2 .gazetari-sociale {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    align-items: center
+}
+
+.lajmi-lexo2 .gazetari-sociale .gazetari {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: kategori
+}
+
+.lajmi-lexo2 .gazetari-sociale .ora {
+    color: #5e5e5e;
+    font-weight: 300;
+    font-size: 14px;
+    text-transform: none;
+    font-family: nentitull
+}
+
+.lajmi-lexo2 .gazetari-sociale nga {
+    color: #909090;
+    font-weight: 300;
+    font-size: 16px;
+    padding-right: 5px;
+    text-transform: none;
+    font-family: nentitull;
+    letter-spacing: -.5px
+}
+
+.lajmi-lexo2 h3 {
+    font-size: 40px;
+    line-height: 44px;
+    padding: 0;
+    margin: 30px 0;
+    font-weight: 600
+}
+
+.lajmi-lexo2 .nentitulli {
+    font-size: 18px;
+    line-height: 22px;
+    color: #383838
+}
+
+.lajmi-lexo2 .foto-lajmi {
+    width: 100%
+}
+
+.lajmi-lexo2 .teksti p {
+    word-break: break-word;
+    line-height: 27px;
+    font-weight: 400;
+    font-size: 20px;
+    color: #000;
+    font-family: nentitull
+}
+
+.lajmi-lexo2 .teksti p a {
+    color: #198abd
+}
+
+.lajmi-lexo2 .teksti img {
+    width: 100%
+}
+
+.lajmi-lexo2 .teksti iframe {
+    width: 100%
+}
+
+.lajmi-lexo2 .teksti b,strong {
+    font-weight: 400;
+    font-family: kategori;
+    font-size: 20px
+}
+
+.lajmi-lexo2 .foto-lajmi img {
+    width: 100%;
+    max-width: 100%;
+    height: auto
+}
+
+.lajmi-lexo .anash-lajmi {
+    width: 300px;
+    background: #fff;
+    margin-top: 100px
+}
+
+.vija {
+    border-bottom: 2px solid #e3e3e3;
+    margin: 20px 0
+}
+
+.fronttv .foto .ikona-videos {
+    background-image: url(../logo/videoikona.png);
+    width: 64px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 64px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%)
+}
+
+.fronttv2 .foto .ikona-videos {
+    background-image: url(../logo/videoikona.png);
+    width: 64px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 64px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%)
+}
+
+.lajmi-zhvillim-emri {
+    font-size: 27px;
+    padding: 10px;
+    margin-bottom: 20px;
+    line-height: 1;
+    font-weight: 400;
+    color: #ee3024;
+    text-transform: uppercase;
+    font-family: kategori;
+    background: #dbdbdb
+}
+
+.tit-ikona {
+    width: 20px;
+    display: inline-block;
+    line-height: 0;
+    float: left;
+    padding-right: 6px
+}
+
+.tit-ikona img {
+    width: 100%
+}
+
+.lajmi-zhvillim {
+    background: #f7f7f7;
+    padding: 20px;
+    margin-bottom: 40px;
+    border-bottom: 2px solid #ee3024;
+    border-top: 5px solid #dfdfdf
+}
+
+.lajmi-zhvillim .titulli {
+    font-size: 50px;
+    line-height: 50px;
+    margin-bottom: 20px;
+    color: #000;
+    font-weight: 400;
+    font-family: perkryesore
+}
+
+.lajmi-zhvillim .ora {
+    color: #363636;
+    font-size: 15px;
+    text-transform: none;
+    letter-spacing: -.5px;
+    margin-top: 10px;
+    padding: 0 6px;
+    border-left: 7px solid #e5c700;
+    line-height: 1;
+    font-family: nentitull
+}
+
+.fronttv .foto {
+    position: relative
+}
+
+.search-box {
+    position: absolute;
+    top: 85px;
+    right: 0;
+    background-color: #2c2c2c;
+    width: 100%;
+    display: none;
+    -webkit-box-shadow: 0 3px 38px 0 rgb(2 1 8/8%);
+    box-shadow: 0 3px 38px 0 rgb(2 1 8/8%);
+    z-index: 999
+}
+
+.search-box h3 {
+    color: #282828;
+    font-size: 26px;
+    margin: 0 5px 40px;
+    text-transform: uppercase;
+    font-weight: 400
+}
+
+.search-box input::placeholder {
+    color: #d3d3d3
+}
+
+.search-box form label {
+    position: relative;
+    width: 100%;
+    display: inline-block
+}
+
+.search-box input[type=text] {
+    width: 100%;
+    height: 50px;
+    padding: 5px 65px 5px 10px;
+    border: none;
+    font-size: 14px;
+    box-sizing: border-box;
+    color: #efefef;
+    border-radius: 0;
+    font-weight: 300;
+    font-family: kategori;
+    background: #404040;
+    font-family: geologica,sans-serif
+}
+
+.search-box input[type=text]:focus {
+    outline: none
+}
+
+.search-box button.submit-btn {
+    position: absolute;
+    right: 0;
+    background: #ee3024;
+    top: 0;
+    height: 50px;
+    width: 50px;
+    border: none;
+    color: #e7e7e7;
+    cursor: pointer;
+    outline: none;
+    text-align: center
+}
+
+.search-box button.submit-btn img {
+    width: 30px!important
+}
+
+button.search-open {
+    float: right;
+    border: none;
+    padding: 10px 12px;
+    font-size: 15px;
+    color: #3e3e3e;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none
+}
+
+.sociale img {
+    width: 32px
+}
+
+.sociale-page {
+    float: right;
+    position: relative;
+    top: -47px
+}
+
+.sociale rrjetet {
+    margin: 6px
+}
+
+.sociale rrjetet:last-child {
+    margin-right: 0
+}
+
+.vazhdonlajmi3 .kategoris .cat-ora {
+    margin-top: 10px
+}
+
+.vazhdonlajmi3 .kategoris {
+    border: 0;
+    padding: 0;
+    width: 100%
+}
+
+.vazhdonlajmi3 .kategoris .titulli {
+    font-size: 28px;
+    line-height: 30px
+}
+
+.vazhdonlajmi3 .kategoris .foto {
+    width: 400px;
+    float: left;
+    margin-right: 20px
+}
+
+.vazhdonlajmi3 .kategoris .foto img {
+    height: 200px
+}
+
+.anash-lajmi.kategoris {
+    background: #fff
+}
+
+.anash-lajmi.kategoris .anash-lajmivazhdon .titulli {
+    font-size: 22px
+}
+
+.anash-lajmi.kategoris .anash-lajmivazhdon .lajmiinfo {
+    border: 0
+}
+
+.kategori2 {
+    background: #e9e8e1;
+    display: flex;
+    padding: 20px;
+    flex-wrap: inherit
+}
+
+.kategori2 .kategorivazhdon {
+    border-right: 1px solid #b8b8b8;
+    padding: 0 20px;
+    width: 360px
+}
+
+.kategori2 .kategorivazhdon:last-child {
+    border: 0
+}
+
+.kategori2 .kategorivazhdon:first-child {
+    padding: 0
+}
+
+.kategori2 .kategorivazhdon .foto {
+    width: 150px;
+    float: left;
+    margin-right: 20px
+}
+
+.kategori2 .kategorivazhdon img {
+    width: 150px;
+    height: 120px;
+    object-fit: cover
+}
+
+.kategori2 .kategorivazhdon .titulli {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 20px
+}
+
+.kategori2 .kategorivazhdon .cat-ora {
+    margin-top: 0
+}
+
+.sportit {
+    display: flex;
+    width: 100%
+}
+
+.sportit .anash-ballina {
+    border-left: 2px solid #e3e3e3
+}
+
+.sportit .spotlight ora {
+    background: #00d58d
+}
+
+.sportit img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover
+}
+
+.sportit1 {
+    width: 450px;
+    border-right: 2px solid #e3e3e3;
+    padding-right: 15px
+}
+
+.sportit1 .titulli {
+    font-size: 29px;
+    line-height: 36px;
+    font-weight: 600
+}
+
+.sportit2 {
+    width: 350px;
+    padding-left: 15px;
+    padding-right: 15px
+}
+
+.sportit2 .fix {
+    border-bottom: 2px solid #e3e3e3;
+    padding-bottom: 25px;
+    margin-bottom: 15px
+}
+
+.sportit2 .fix:last-child {
+    border: 0
+}
+
+.sportit2 .foto {
+    float: left;
+    width: 140px;
+    height: 130px;
+    margin-right: 15px
+}
+
+.sportit2 .titulli {
+    font-weight: 700;
+    line-height: 20px
+}
+
+.sportit2 .cat-ora {
+    margin-top: 0!important
+}
+
+.sportit .spotlight .titulli {
+    width: 295px
+}
+
+.sportit .titulli-spotilight {
+    margin-top: 0
+}
+
+.reklama-anash-lajmekategori {
+    margin-bottom: 20px;
+    text-align: center
+}
+
+ora {
+    font-size: 15px;
+    font-weight: 400;
+    padding: 0;
+    color: #363636
+}
+
+cat {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #ee3024;
+    font-family: kategori;
+    font-weight: 500
+}
+
+.ngjyra-new cat {
+    color: #0f8e25
+}
+
+.menu-mobile {
+    display: none
+}
+
+.logo-mobile {
+    display: none
+}
+
+.mobile {
+    display: none
+}
+
+.desktop {
+    display: block
+}
+
+.reklama-header {
+}
+
+.etiketimet {
+    padding: 15px 0;
+    font-weight: 400;
+    font-size: 14px;
+    color: #c4c4c4;
+    clear: both;
+    margin: 0
+}
+
+.etiketimet a {
+    padding: 6px 12px;
+    color: #2e2e2e;
+    border-radius: 25px;
+    background: #f5f5f5;
+    margin-right: 6px;
+    margin-bottom: 6px;
+    display: inline-block;
+    font-family: nentitull
+}
+
+.etiketimet a:hover {
+    color: #fff;
+    background: #ee3024
+}
+
+.page-nav {
+    font-size: 12px;
+    display: inline-block;
+    width: 100%
+}
+
+.page-nav .current {
+    background-color: #dadada;
+    color: #646464;
+    border-color: #cfcfcf
+}
+
+.page-nav a,.page-nav span {
+    padding: 5px 11px;
+    border: 1px solid #b3b3b3;
+    display: inline-block;
+    margin: 0 8px 8px 0;
+    min-width: 15px;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    color: #666;
+    line-height: 21px;
+    float: left
+}
+
+.page-nav a:hover {
+    background: #dadada;
+    color: #646464;
+    border-color: #cfcfcf
+}
+
+.next {
+    display: none!important
+}
+
+.prev {
+    display: none!important
+}
+
+.ndaj {
+    display: flex;
+    gap: 20px;
+    grid-gap: 20px;
+    margin-bottom: 0;
+    padding-bottom: 0
+}
+
+.ndaj titulli {
+    margin-top: 0
+}
+
+.per-aktuale {
+    width: 100%
+}
+
+.per-opinione {
+    width: 30%;
+    display:none  !important;
+}
+
+.aktualitet {
+    display: flex;
+    gap: 20px;
+    grid-gap: 20px
+}
+
+.aktualitet1 {
+    width: 50%
+}
+
+.aktualitet2 {
+    width: 50%
+}
+
+.aktualitet2 .aktualitet-vazhdon {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    grid-gap: 20px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #cfcfcf;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+.aktualitet2 .aktualitet-vazhdon:last-child {
+    border: 0
+}
+
+.aktualitet2 .aktualitet-vazhdon .cat-ora {
+    margin-top: 0
+}
+
+.aktualitet2 .aktualitet-vazhdon .titulli {
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 400;
+    position: absolute;
+left: 0;
+margin-left: 140px;
+}
+
+.aktualitet .titulli {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 500;
+    font-family: kategori;
+    font-weight: 400
+}
+
+.aktualitet .foto img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover
+}
+
+.aktualitet2 .foto {
+    width: 130px;
+    height: 100px;
+    order: 0;
+}
+
+.aktualitet2 .foto img {
+    width: 130px;
+    height: 100px!important;
+    object-fit: cover
+}
+
+.opinione .titulli {
+    font-size: 20px;
+    margin-bottom: 10px;
+    border-bottom: 5px solid #dfdfdf;
+    padding-bottom: 0;
+    line-height: 20px;
+    font-weight: 400;
+    font-family: perkryesore
+}
+
+.opinione .titulli:last-child {
+    border: 0;
+    margin: 0;
+    padding: 0
+}
+
+.shkruan-single {
+    display: flex;
+    gap: 15px;
+    grid-gap: 15px;
+    margin: 10px 0;
+    align-items: center
+}
+
+.shkruan-single .foto {
+    width: 40px;
+    height: 40px
+}
+
+.shkruan-single .emri {
+    font-size: 16px;
+    line-height: 20px;
+    color: #ee3024;
+    font-weight: 500;
+    font-family: kategori
+}
+
+.shkruan-single .foto img {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border: 2px solid #d1d1d1
+}
+
+.opinione {
+    background: #f3f3f3;
+    padding: 15px;
+    position: relative;
+    top: -15px
+}
+
+.ak-nen .lajmiinfo {
+    color: #767676;
+    line-height: 22px;
+    font-family: nentitull
+}
+
+.lajmi-info {
+    position: relative;
+    top: 10%;
+    background: #f3f3f3;
+    padding: 20px;
+    height: 150px;
+    border-bottom: 2px solid #ee3024;
+    margin-right: 30px;
+    margin-top: 33px;
+    -webkit-box-shadow: 10px 10px 39px -21px rgba(0,0,0,.75);
+    -moz-box-shadow: 10px 10px 39px -21px rgba(0,0,0,.75);
+    box-shadow: 10px 10px 39px -21px rgba(0,0,0,.75)
+}
+
+.lajmi-info .sociale rrjetet {
+    margin: 0
+}
+
+.lajmi-info .sociale {
+    display: inline-grid;
+    gap: 20px;
+    grid-gap: 20px
+}
+
+.lajmi-zhvillim .sc {
+    padding-top: 10px;
+    display: flex!important;
+    font-family: permenu;
+    gap: 5px;
+    grid-gap: 5px
+}
+
+.lajmi-zhvillim .sc img {
+    width: 20px!important
+}
+
+@media screen and (max-width: 1024px) {
+    .mobile {
+        display:block!important
+    }
+
+    .sc {
+        padding-top: 10px;
+        display: flex!important;
+        font-family: permenu;
+        gap: 5px;
+        grid-gap: 5px
+    }
+
+    .sc img {
+        width: 20px!important
+    }
+
+    .lajmi-zhvillim+.sc {
+        display: none!important
+    }
+
+    .desktop {
+        display: none!important
+    }
+
+    .kryesoret-new .reklama {
+        width: 300px;
+        margin: 0 auto
+    }
+
+    .gazetari-sociale .sociale {
+        background: #f3f3f3;
+        padding: 10px;
+        left: 10px;
+        position: relative;
+        border-radius: 20px 0 0 20px
+    }
+
+    .sociale img {
+        width: 25px
+    }
+
+    .kontenti {
+        width: 100%;
+        padding: 0 10px!important
+    }
+
+    .kontenti.ballines {
+        padding: 0!important;
+        margin: 0
+    }
+
+    .kontenti.ballines .lajme {
+        padding: 0 10px
+    }
+
+    .baneri-header img {
+        width: 100%
+    }
+
+    .kryesoret {
+        display: block;
+        padding-bottom: 0;
+        border: 0;
+        padding: 0
+    }
+
+    .kryesoret .lajmi3 .titulli {
+        font-size: 26px;
+        line-height: 33px;
+        padding: 0 10px
+    }
+
+    .kryesoret .lajmi3 .lajmiinfo {
+        padding: 0 10px;
+        margin: 6px 0;
+        display: none
+    }
+
+    .kryesoret .lajmi3 .cat-ora {
+        padding: 10px
+    }
+
+    .vazhdonlajmi3 .dyposte .titulli {
+        font-size: 18px;
+        line-height: 22px
+    }
+
+    .kryesoret .lajmi3 .foto {
+        width: 100%;
+        float: none;
+        padding: 0
+    }
+
+    .kryesoret .lajmi3 img {
+        height: 250px;
+        margin: 0
+    }
+
+    .kryesoret .lajmi3 {
+        width: 100%;
+        border: 0;
+        padding: 0;
+        height: auto;
+        padding-bottom: 20px
+    }
+
+    .vazhdonlajmi3 {
+        margin-bottom: 20px
+    }
+
+    .vazhdonlajmi3 .foto img {
+        height: 120px
+    }
+
+    .anash-ballina {
+        width: 100%;
+        padding: 0
+    }
+
+    .lajme {
+        display: block
+    }
+
+    .ex {
+        margin-top: 0!important;
+        margin-left: -10px!important;
+        margin-right: -10px!important
+    }
+
+    .lajme .lajmet .lajmiinfo {
+    }
+
+    .vazhdonlajmi3 .dyposte .lajmiinfo {
+        display: none
+    }
+
+    .lajmet {
+        width: 100%;
+        padding: 0;
+        padding-bottom: 15px;
+        border: 0;
+        margin-bottom: 20px;
+        border-bottom: 1px solid #d1d1d1
+    }
+
+    .pertitujt .tt {
+        display: flex;
+        gap: 10px;
+        grid-gap: 10px
+    }
+
+    .pertitujt .tt.she:nth-child(3) {
+        display: none
+    }
+
+    .pertitujt .tt.she:nth-child(4) {
+        display: none
+    }
+
+    .pertitujt .tt.showw:nth-child(5) {
+        display: none
+    }
+
+    .pertitujt .tt.showw:nth-child(6) {
+        display: none
+    }
+
+    .pertitujt .tt.showw:nth-child(7) {
+        display: none
+    }
+
+    .pertitujt .tt.showw:nth-child(8) {
+        display: none
+    }
+
+    .pertitujt .tt:last-child {
+        border-bottom: 1px solid #d1d1d1
+    }
+
+    .pertitujt .tt .foto img {
+        width: 120px;
+        height: 100px
+    }
+
+    .pertitujt .tt .titulli a {
+        font-size: 18px;
+        line-height: 20px
+    }
+
+    .pertitujt .tt .cat-ora {
+        margin-top: 0;
+        margin-bottom: 0
+    }
+
+    .lajmet:last-child {
+        border: 0
+    }
+
+    .lajme .lajmet img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover
+    }
+
+    .aktualitet .foto img {
+        height: 200px
+    }
+
+    .nballine {
+        width: 100%;
+        padding: 0;
+        border: 0
+    }
+
+    .hulumtime {
+        display: block
+    }
+
+    .hulumtime .lajmi1 {
+        width: 100%;
+        border: 0;
+        padding: 0
+    }
+
+    .lajmi2 {
+        width: 100%;
+        padding-left: 0
+    }
+
+    .sporti {
+        display: block;
+        width: 100%
+    }
+
+    .sport1 {
+        width: 100%
+    }
+
+    .sport1 .fix {
+        border-bottom: 2px solid #e3e3e3;
+        height: 150px;
+        margin-bottom: 20px
+    }
+
+    .sport2 {
+        width: 100%;
+        margin-bottom: 20px;
+        border-bottom: 2px solid #e3e3e3;
+        padding-bottom: 20px
+    }
+
+    .flipster--coverflow .flipster__container {
+        left: 0!important
+    }
+
+    .vip {
+        display: block;
+        width: 100%
+    }
+
+    .vip1 {
+        width: 100%;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        border-bottom: 2px solid #e3e3e3
+    }
+
+    .vip1 .titulli {
+        font-size: 26px;
+        line-height: 30px
+    }
+
+    .vip2 {
+        width: 100%
+    }
+
+    .vip2 .fix {
+        padding-bottom: 30px;
+        margin-bottom: 20px;
+        border-bottom: 2px solid #e3e3e3
+    }
+
+    .reklama-anash img {
+        height: auto;
+        width: auto
+    }
+
+    .reklama-anash {
+        text-align: center
+    }
+
+    .fronttv {
+        display: block;
+        width: 100%
+    }
+
+    .fronttv1 {
+        width: 100%;
+        border-right: 0;
+        padding-right: 0;
+        margin-bottom: 40px
+    }
+
+    .fronttv2 {
+        width: 100%;
+        padding-left: 0
+    }
+
+    .footer {
+        display: block;
+        padding: 20px 0
+    }
+
+    .footer .f2 {
+        width: 100%;
+        padding-right: 0;
+        margin-bottom: 20px;
+        border: 0
+    }
+
+    .footer .f1 {
+        width: 100%
+    }
+
+    .lajmi-lexo {
+        display: block
+    }
+
+    .search-box {
+        top: 85px
+    }
+
+    .lajmi-lexo2 {
+        width: 100%
+    }
+
+    .lajmi-lexo2 h3 {
+        font-size: 30px;
+        line-height: 36px;
+        padding: 0;
+        margin: 30px 0;
+        font-weight: 600
+    }
+
+    .menu ul li {
+        display: none
+    }
+
+    .page-titulli {
+        font-size: 50px
+    }
+
+    .stafi-info {
+        display: block
+    }
+
+    .stafi {
+        width: 100%
+    }
+
+    .stafi p {
+        margin-right: 0
+    }
+
+    .background-footeri {
+        display: block
+    }
+
+    .infostafi {
+        width: 100%;
+        margin-top: 50px
+    }
+
+    .footer .f1 {
+        width: 100%;
+        border-top: 1px solid #f8f8f8;
+        padding-top: 20px;
+        padding-left: 0
+    }
+
+    .vazhdonlajmi3 .kategoris .foto {
+        width: 100%;
+        float: none
+    }
+
+    .kategori2 {
+        background: #e9e8e1;
+        display: block;
+        padding: 20px
+    }
+
+    .kategori2 .kategorivazhdon {
+        border: 0;
+        padding: 0;
+        clear: both;
+        margin-bottom: 15px;
+        padding-bottom: 10px!important;
+        width: 100%;
+        border-bottom: 2px solid #b8b8b8;
+        height: 130px
+    }
+
+    .kategori2 .kategorivazhdon:last-child {
+        margin-bottom: 0;
+        padding-bottom: 0!important
+    }
+
+    .sportit {
+        display: block
+    }
+
+    .sportit1 {
+        width: 100%;
+        border: 0;
+        padding: 0;
+        border-bottom: 2px solid #e3e3e3;
+        margin-bottom: 15px;
+        padding-bottom: 15px
+    }
+
+    .sportit2 {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0
+    }
+
+    .sport2 .foto img {
+        height: 300px
+    }
+
+    .sportit1 .titulli {
+        font-size: 22px;
+        line-height: 26px;
+        font-weight: 600
+    }
+
+    .sportit .anash-ballina {
+        border-left: 0
+    }
+
+    .spotlight .cat-ora:last-child {
+        border-bottom: 2px solid #e3e3e3
+    }
+
+    .hulumtime .lajmi1 .titulli {
+        font-size: 26px;
+        line-height: 30px
+    }
+
+    .sport2 .titulli {
+        font-size: 26px;
+        line-height: 30px
+    }
+
+    .background-infografika titulli {
+        margin-top: 0;
+        padding: 0
+    }
+
+    .background-frontv titulli {
+        margin-top: 0;
+        padding: 0
+    }
+
+    .fronttv1 .titulli {
+        font-size: 30px;
+        line-height: 36px
+    }
+
+    .sociale-page {
+        float: none;
+        position: relative;
+        top: 0;
+        padding-top: 20px
+    }
+
+    .lajmi-lexo .anash-lajmi {
+        width: 100%;
+        margin-top: 0
+    }
+
+    .hiqe-kontent .kontenti {
+        padding: 0!important
+    }
+
+    .logo-header {
+        display: none
+    }
+
+    .logo {
+        padding: 5px 8px
+    }
+
+    .logo img {
+        padding: 0!important;
+        max-width: 180px
+    }
+
+    .footer .logo img {
+        width: 200px;
+        margin: 0 auto;
+        display: block
+    }
+
+    .menu {
+        height: 85px;
+    }
+
+    #main {
+        display: block
+    }
+
+    .logo-mobile {
+        display: block
+    }
+
+    .menu-mobile {
+        display: block
+    }
+
+    .menu-mobile .kontenti {
+        margin: 0
+    }
+
+    .menu-mobile .menu ul li {
+        padding: 0 10px;
+        margin: 0;
+        display: inline-flex;
+        line-height: 0
+    }
+
+    .menu-mobile .menu ul li a {
+        color: #000
+    }
+
+    .menu-mobile .menu {
+        white-space: nowrap;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        -ms-overflow-style: -ms-autohiding-scrollbar;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+        background: #f3f3f3;
+        height: 40px;
+        line-height: 40px
+    }
+
+    .menu-mobile .menu::-webkit-scrollbar {
+        display: none
+    }
+
+    .menu-mobile .menu ul li:first-child {
+        padding-left: 5px
+    }
+
+    #main {
+        padding-right: 0;
+        padding: 8px
+    }
+
+    .sticky {
+        width: 100%!important;
+        left: 0
+    }
+
+    .sticky .logo-mobile {
+        padding: 10px
+    }
+
+    .sticky #main {
+        padding: 8px
+    }
+
+    .fixkerko .kontenti {
+        margin: 0!important;
+        padding: 0!important
+    }
+
+    .sticky .kontenti {
+        padding: 0
+    }
+
+    .kryesoret .ball {
+        background: #ffe462
+    }
+
+    .kryesoret .ball ora {
+        background: #000;
+        color: #fff
+    }
+
+    .kryesoret .ball .titulli-spotilight {
+        background: #ffe462;
+        color: #000
+    }
+
+    .kryesoret .ball .cat-ora {
+        border-bottom: 1px solid #fff;
+        margin: 15px 10px
+    }
+
+    .kategori2 .kategorivazhdon .foto {
+        width: 120px
+    }
+
+    .kategori2 .kategorivazhdon .foto img {
+        width: 100%
+    }
+
+    .hulumtime .lajmi1 .foto img {
+        height: auto
+    }
+
+    .fronttv1 img {
+        height: auto;
+        object-fit: cover
+    }
+
+    .fronttv2 img {
+        height: auto;
+        object-fit: cover
+    }
+
+    .spotlight .cat-ora {
+        border-bottom: 2px solid #e3e3e3;
+        height: 100px
+    }
+
+    .art h3 {
+        font-size: 36px;
+        line-height: 36px;
+        margin: 15px 0
+    }
+
+    .art .lajme-titulli {
+        margin: 0
+    }
+
+    .teksti {
+        padding: 0;
+        margin-bottom: 30px
+    }
+
+    .kerkimi {
+        padding: 0 10px;
+        cursor: pointer;
+        text-transform: uppercase;
+        font-size: 14px;
+        margin: 11px 0;
+        border-right: 1px solid #dee7eb;
+        border-radius: 0
+    }
+
+    .kerkimi img {
+        width: 26px!important
+    }
+
+    .largojee {
+        top: 5px;
+        right: 10px
+    }
+
+    .shtyje-search {
+        width: 100%;
+        margin: 50px auto;
+        padding: 0 10px;
+        box-sizing: border-box
+    }
+
+    .lajmet-search .foto {
+        width: 130px;
+        height: 80px;
+        padding-right: 10px
+    }
+
+    .lajmet-search .foto img {
+        width: 130px
+    }
+
+    .lajmet-search .titulli {
+        font-size: 18px;
+        line-height: 22px;
+        width: 80%
+    }
+
+    .kerkoni-menumeshume {
+        padding: 0
+    }
+
+    .minifooter p {
+        text-align: center;
+        margin: 0;
+        padding: 16px 0;
+        padding-bottom: 0
+    }
+
+    .lajmi-lexo2 .foto-lajmi {
+        width: 100vw;
+        position: relative;
+        left: 50%;
+        margin-left: -50vw
+    }
+
+    .logo a {
+        font-size: 35px
+    }
+
+    .minifooter .kontenti {
+        display: block;
+        background: #f3f3f3;
+        padding-bottom: 10px!important
+    }
+
+    .minifooter {
+        border-bottom: 5px solid #e5c700
+    }
+
+    .minifooter .kontenti .sociale {
+        text-align: center;
+        background: #f5f5f5
+    }
+
+    .minifooter .kontenti .sociale a {
+        color: #ee3024
+    }
+
+    .lajmi-zhvillim .titulli {
+        font-size: 36px!important;
+        line-height: 36px!important;
+        font-family: perkryesore
+    }
+
+    .lajmi-zhvillim {
+        padding: 10px!important
+    }
+}
+
+.artikulli-sponsor {
+    display: flex;
+    position: relative;
+    margin-bottom: 30px;
+    border-top: 1px solid #e3e3e3;
+    border-bottom: 1px solid #e3e3e3;
+    padding: 10px 0
+}
+
+.foto-sponsor {
+    width: 40%
+}
+
+.foto-sponsor img {
+    width: 100%;
+    height: 100%
+}
+
+.titulli-sponsor {
+    padding: 15px;
+    line-height: 1.2em;
+    font-size: 1.6em;
+    font-weight: 600;
+    width: 60%
+}
+
+.sponsor {
+    bottom: 10px;
+    position: absolute;
+    right: 15px;
+    font-size: 17px;
+    font-style: italic;
+    color: #2d393c
+}
+
+@media(max-width: 1023px) {
+    .artikulli-sponsor {
+        height:92px!important
+    }
+
+    .titulli-sponsor {
+        top: 5px!important;
+        font-size: 15px!important;
+        line-height: 1.1!important;
+        font-weight: 700
+    }
+
+    .sponsor {
+        right: 10px;
+        font-size: 13px!important;
+        bottom: 5px
+    }
+
+    .reklama-nmes {
+        width: 300px!important;
+        margin: 0 auto
+    }
+
+    .nmes {
+        background: #fff!important;
+        padding: 0!important;
+        border: 0!important;
+        box-shadow: unset!important;
+        -webkit-box-shadow: unset!important;
+        -moz-box-shadow: unset!important
+    }
+
+    .kryesoret-new {
+        display: block
+    }
+
+    .kryesoret-new .lajmi-pare .titulli {
+        /* font-size:36px; */
+        /* line-height:36px; */
+        margin: 10px 0;
+        font-weight: 400;
+        text-align: center
+    }
+
+    .kryesoret-new .shkruan-single {
+        justify-content: center
+    }
+
+    .kryesoret-new .foto {
+        width: 100%
+    }
+
+    .kryesoret-new .foto img {
+        height: 220px;
+        object-fit: cover;
+        max-height: 250px
+    }
+
+    .kryesoret-new .perdyjat .foto img {
+        width: 100%;
+        height: 130px
+    }
+
+    .kryesoret-new .aktuale-mobile {
+        padding-bottom: 0;
+        border-color: #fff;
+        margin-bottom: 0
+    }
+
+    .kryesoret-new .aktuale-mobile .cat-ora {
+        display: none
+    }
+
+    .kryesoret-new .perdyjat .titulli {
+        color: #161616;
+        font-size: 20px;
+        line-height: 22px;
+        font-family: perkryesore;
+        margin: 10px 0
+    }
+
+    .aktuale-mobile {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 15px;
+        grid-gap: 15px;
+        margin-bottom: 20px;
+        border-bottom: 0;
+        padding-bottom: 0
+    }
+
+    .aktuale-mobile img {
+        width: 100%;
+        height: 120px;
+        object-fit: cover
+    }
+
+    .aktuale-mobile .titulli {
+        font-size: 18px;
+        line-height: 22px;
+        font-family: kategori
+    }
+
+    .kryesoret-new .shkruan-single .foto img {
+        height: auto
+    }
+
+    .kryesoret-new .shkruan-single .foto {
+        width: auto
+    }
+
+    .lajmi-pare {
+        display: block
+    }
+
+    .vazhdoo {
+        width: 100%
+    }
+
+    .lajmet-dy {
+        display: block;
+        padding: 0 2px;
+        padding-left: 5px;
+        background: #ee3024
+    }
+
+    .lajmet2 {
+        border-bottom: 1px solid #cfcfcf;
+        padding-bottom: 0;
+        margin-bottom: 10px
+    }
+
+    .lajmet2 .foto {
+    }
+
+    .ndaj {
+        display: block
+    }
+
+    .ndaj .per-aktuale {
+        width: 100%
+    }
+
+    .kryesoret-new .lajmi-kontent {
+        padding: 10px;
+        box-sizing: border-box;
+        padding-top: 0
+    }
+
+    .ndaj .aktualitet {
+        display: block
+    }
+
+    .kryesoret-new .lajmiinfo {
+        margin-bottom: 20px
+    }
+
+    .ndaj .aktualitet1 {
+        width: 100%;
+        margin-bottom: 15px;
+        border-bottom: 1px solid #cfcfcf;
+        padding-bottom: 15px
+    }
+
+    .ndaj .aktualitet2 {
+        width: 100%
+    }
+
+    .per-opinione {
+        width: 100%;
+        margin-bottom: 15px
+    }
+
+    .lajmet3 {
+        border: 0;
+        padding: 10px;
+        background: #fff
+    }
+
+    .lajmet4 .cat-ora {
+        margin-bottom: 0
+    }
+
+    .lajmet4 .foto {
+    }
+
+    .lajmet-dy .titulli {
+        margin-bottom: 10px;
+        padding: 10px 0;
+        font-size: 20px!important;
+        line-height: 25px;
+        border-color: #cbcbcb
+    }
+
+    .lajmet-dy .foto img {
+        height: 200px;
+        object-fit: cover
+    }
+
+    .lajmet3 .titulli:last-child {
+        border-bottom: 0;
+        padding-bottom: 0
+    }
+
+    .ek .lajmet:nth-child(3) {
+        background: 0 0;
+        width: 100%;
+        display: block;
+        gap: 20px;
+        grid-gap: 20px;
+        padding: 0
+    }
+
+    .ek .lajme {
+        display: block
+    }
+
+    .ek .lajmet:nth-child(1) {
+        background: #000
+    }
+
+    .ek .lajmet:nth-child(1) .cat-ora {
+        padding: 0 20px
+    }
+
+    .ek .lajmet:nth-child(1) ora {
+        color: #b0b0b0
+    }
+
+    .ek .lajmet:nth-child(1) .titulli {
+        padding: 10px 20px
+    }
+
+    .ek .lajmet:nth-child(1) .titulli a {
+        color: #fff
+    }
+
+    .ek .lajme {
+        display: block
+    }
+
+    .ek .lajmet:nth-child(3) .titulli {
+        padding: 0
+    }
+
+    .ek .lajmet:nth-child(3) .titulli a {
+        color: #000
+    }
+
+    .kryesoret-new .lajmi-kontent .cat-ora {
+        margin: 6px 0
+    }
+
+    .lajmi-lexo2 .gazetari-sociale .shkruan-single {
+        margin: 0
+    }
+
+    .spotlight .titulli {
+        font-size: 20px;
+        line-height: 25px
+    }
+
+    .lajme .lajmet .titulli {
+        font-size: 20px;
+        line-height: 25px
+    }
+
+    .opinione .titulli {
+        font-size: 20px;
+        line-height: 25px
+    }
+
+    .ek .lajmet:nth-child(3) .cat-ora {
+        display: block
+    }
+
+    .ex .extra-lajmi {
+        width: 100%!important;
+        display: block!important;
+        height: auto!important
+    }
+
+    .extra-lajmi .foto img {
+        width: 100%;
+        height: 200px!important
+    }
+
+    .ex .dyjat {
+        padding: 20px 10px!important;
+        width: 100%!important;
+        box-sizing: border-box
+    }
+
+    .sociale-footer {
+        justify-content: center;
+        margin-top: 30px
+    }
+
+    .sidenav .sociale-footer a {
+        padding: 0
+    }
+
+    .sidenav .sociale-footer {
+        position: absolute;
+        bottom: 20px;
+        width: 100%
+    }
+
+    .sub-menu {
+        display: none!important
+    }
+}
+
+.nmes {
+    display: flex;
+    gap: 20px;
+    grid-gap: 20px;
+    background: #f5f5f5;
+    padding: 20px;
+    border-left: 3px solid #ee3024;
+    margin: 20px 0
+}
+
+.lajme-nmes {
+    width: 50%;
+    border-left: 1px solid #d1d1d1;
+    padding: 0 20px
+}
+
+.lajme-nmes .titull {
+    font-size: 20px;
+    text-transform: uppercase;
+    border-bottom: 2px solid;
+    margin-bottom: 20px;
+    padding-bottom: 6px;
+    font-family: kategori
+}
+
+.lajme-nmes .titulli {
+    color: #000;
+    font-size: 18px;
+    line-height: 23px;
+    font-family: kategori;
+    margin-bottom: 13px;
+    border-left: 4px solid #c7c7c7;
+    padding-left: 10px;
+    font-weight: 400
+}
+
+.lajme-nmes .titulli:hover {
+    border-color: #ee3024
+}
+
+.ngjyra-new {
+    background: #cecece;
+    padding-bottom: 20px;
+    margin-bottom: 20px
+}
+
+.kryesoret-new .shkruan-single+.lajmiinfo {
+    display: none
+}
+
+.extra-lajmi {
+    width: 50%
+}
+
+.extra-lajmi .foto {
+    position: relative
+}
+
+.extra-lajmi .foto img {
+    width: 100%;
+    height: 270px;
+    object-fit: cover
+}
+
+.ex {
+    grid-template-columns: repeat(3,1fr);
+    margin: 30px 0
+}
+
+.ex .extra-lajmi {
+    width: 570px;
+    height: 270px;
+    margin-bottom: 20px;
+    display: flex;
+    background: #ee3024;
+    gap: 10px;
+    grid-gap: 10px
+}
+
+.ex .extra-lajmi .titulli {
+    font-size: 26px;
+    margin-top: auto;
+    font-weight: 400;
+    font-family: perkryesore
+}
+
+.ex .extra-lajmi .titulli a {
+    color: #fff
+}
+
+.ex .extra-lajmi .titulli a:hover {
+    color: #f3f3f3
+}
+
+.ex .extra-lajmi cat {
+    color: #e5c700
+}
+
+.ex .dyjat {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    width: 85%
+}
+
+.ex .extra-lajmi titulli {
+    border: 0;
+    padding: 0;
+    position: relative;
+    color: #fff
+}
+
+.ex .extra-lajmi .tit-ikona img {
+    height: auto!important
+}
+
+.ex .ngjyr {
+    box-shadow: 19px -99px 122px 4px rgb(25 94 125/59%) inset;
+    -webkit-box-shadow: 19px -99px 122px 4px rgb(25 94 125/59%) inset;
+    -moz-box-shadow: 19px -99px 122px 4px rgb(25 94 125/59%) inset;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    position: absolute
+}
+
+.sociale-footer {
+    display: flex;
+    gap: 10px;
+    grid-gap: 10px
+}
+
+.sociale-footer img {
+    width: 23px
+}
+
+.toast {
+    font-family: geologica,sans-serif!important;
+    font-weight: 300!important;
+    font-size: 14px!important
+}
+
+
+.footer_logo {
+    width: 140px;
+}
+
+.gt_float_switcher .gt-selected{
+    position: relative !important;
+    padding:0 !important;
+}
+
+@media screen and (max-width: 1024px) {
+    .gt_float_switcher .gt-selected {
+        padding: 0 !important;
+      }
+
+      .gt_float_switcher .gt-selected {
+        position: relative !important;
+        padding:0 !important;
+      }
+}
+
+@media(min-width:768px) {
+    .adxp-sticky {
+        display:none;
+    }
+}
